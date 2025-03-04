@@ -1,0 +1,52 @@
+@use './reset';
+@use './variables';
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+// Typography
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-large);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+p {
+  margin-bottom: var(--spacing-small);
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+// Margins
+.mx-auto { margin: 0 auto; }
+
+.mt-1 { margin-top: var(--spacing-small); }
+.mt-2 { margin-top: var(--spacing-medium); }
+.mt-3 { margin-top: var(--spacing-large); }
+
+.mb-1 { margin-bottom: var(--spacing-small); }
+.mb-2 { margin-bottom: var(--spacing-medium); }
+.mb-3 { margin-bottom: var(--spacing-large); } 
